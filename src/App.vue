@@ -3,6 +3,7 @@
         <div v-for="item in items" :key="item.id">
             {{ item.name }}
         </div>
+        <button @click="displaythis">显示this</button>
     </div>
 </template>
 <script>
@@ -18,5 +19,10 @@ export default {
             ]
         }
     },
+    methods:{
+        displaythis(){
+            console.log(this,'1111111');
+        }
+    }
 }
 </script>
