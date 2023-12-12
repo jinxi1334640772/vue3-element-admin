@@ -1,0 +1,1 @@
+import{d as a,a9 as e,aa as s,a as r,c as t}from"./index-fc1fece1.js";const p=a({__name:"index",setup(a){const p=e(),n=s(),{params:d,query:o}=p,{path:u}=d;return n.replace({path:"/"+u,query:o}),(a,e)=>(r(),t("div"))}});export{p as default};
