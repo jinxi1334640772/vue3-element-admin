@@ -21,6 +21,7 @@ const pathSrc = resolve(__dirname, "src");
 export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
   const env = loadEnv(mode, process.cwd());
   return {
+    publicDir: "vue3-element-admin",
     resolve: {
       alias: {
         "@": pathSrc,
@@ -44,7 +45,7 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
       // 应用端口 (默认:3000)
       port: Number(env.VITE_APP_PORT),
       // 运行是否自动打开浏览器
-      open: true,
+      open: false,
       proxy: {
         /**
          * 反向代理解决跨域配置
