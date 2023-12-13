@@ -21,7 +21,7 @@ const pathSrc = resolve(__dirname, "src");
 export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
   const env = loadEnv(mode, process.cwd());
   return {
-    publicDir: "vue3-element-admin",
+    base: "/vue3-element-admin",
     resolve: {
       alias: {
         "@": pathSrc,
